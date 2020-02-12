@@ -1,6 +1,6 @@
 //Maya ASCII 2018 scene
 //Name: Lamp.ma
-//Last modified: Wed, Feb 12, 2020 01:48:13 PM
+//Last modified: Wed, Feb 12, 2020 01:50:27 PM
 //Codeset: 1252
 requires maya "2018";
 requires "stereoCamera" "10.0";
@@ -15,14 +15,14 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "B1FA3E2D-49C2-1477-C333-ECB552D89E46";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 118.37641994394022 53.952757475306996 -1.7294093531331836 ;
-	setAttr ".r" -type "double3" -21.338352721784073 805.39999999975248 0 ;
+	setAttr ".t" -type "double3" 87.651055171081296 44.650722467024742 33.298293687994125 ;
+	setAttr ".r" -type "double3" -20.738352721782846 783.79999999973631 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "3A3A9519-4606-A2EE-4319-C79D1945B5E0";
 	setAttr -k off ".v" no;
 	setAttr ".pze" yes;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 131.22132984862861;
+	setAttr ".coi" 108.57384797335446;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
