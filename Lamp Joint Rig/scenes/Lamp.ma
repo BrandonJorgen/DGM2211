@@ -1,6 +1,6 @@
 //Maya ASCII 2018 scene
 //Name: Lamp.ma
-//Last modified: Wed, Feb 12, 2020 01:18:42 PM
+//Last modified: Wed, Feb 12, 2020 01:19:53 PM
 //Codeset: 1252
 requires maya "2018";
 requires "stereoCamera" "10.0";
@@ -15,14 +15,14 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "B1FA3E2D-49C2-1477-C333-ECB552D89E46";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 35.141342954429433 22.530654335762122 33.611910258328294 ;
-	setAttr ".r" -type "double3" -7.538352721782795 437.3999999997564 -3.6450300511733383e-15 ;
+	setAttr ".t" -type "double3" 59.662864698395232 12.475887252709516 33.701884857933891 ;
+	setAttr ".r" -type "double3" -6.338352721777877 442.19999999974237 5.8588609698764073e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "3A3A9519-4606-A2EE-4319-C79D1945B5E0";
 	setAttr -k off ".v" no;
 	setAttr ".pze" yes;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 36.052256926401199;
+	setAttr ".coi" 60.539097484499258;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -10829,14 +10829,14 @@ createNode joint -n "Lower_Jnt" -p "|COG_Jnt|Upper_Jnt";
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".dla" yes;
-	setAttr ".jo" -type "double3" 0.048981537510487692 0.041984162363109964 99.955667515816856 ;
+	setAttr ".jo" -type "double3" -179.88126773201935 0.10317972007633659 99.565979951177908 ;
 createNode joint -n "Base_Jnt" -p "|COG_Jnt|Upper_Jnt|Lower_Jnt";
 	rename -uid "2D4F5BD5-4D58-B9E0-B55A-B4A0FB0EA9B0";
-	setAttr ".t" -type "double3" 15.24406861863608 -0.10369532871317982 -0.016193639487031009 ;
+	setAttr ".t" -type "double3" 15.244429900945535 -4.6932253574344135e-14 -1.7245990921776736e-11 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
 	setAttr ".dla" yes;
-	setAttr ".jo" -type "double3" -40.601294645004479 89.999999999999943 0 ;
+	setAttr ".jo" -type "double3" 89.999999980124642 -89.907212162567177 49.008928847999094 ;
 createNode lightLinker -s -n "lightLinker1";
 	rename -uid "45B85F5F-4F45-6812-D99F-4AB2DCEB492B";
 	setAttr -s 2 ".lnk";
